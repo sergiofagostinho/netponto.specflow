@@ -6,7 +6,7 @@ namespace NetPonto.Specflow.Site
 {
     public partial class SendEmail : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs args)
         {
             if (IsPostBack)
             {
@@ -39,7 +39,7 @@ Abraços/Beijinhos,
                     this.result.Text = "Email enviado com sucesso!";
                     return;
                 }
-                catch
+                catch (Exception e)
                 {
                     this.result.Text = "Erro a enviar email. Tente outra vez mais tarde.";
                     return;

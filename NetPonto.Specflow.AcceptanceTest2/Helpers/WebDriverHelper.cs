@@ -2,6 +2,7 @@
 using System.Configuration;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.IE;
 
 namespace NetPonto.Specflow.AcceptanceTest2.Helpers
 {
@@ -18,19 +19,27 @@ namespace NetPonto.Specflow.AcceptanceTest2.Helpers
             {
                 case "Firefox":
                     {
-                        var firefoxProfile = new FirefoxProfile
+                        var profile = new FirefoxProfile
                         {
                             AcceptUntrustedCertificates = true,
                             EnableNativeEvents = true
                         };
-                        driver = new FirefoxDriver(firefoxProfile);
+                        driver = new FirefoxDriver(profile);
 
                         break;
                     }
-                case "Chrome":
                 case "InternetExplorer":
-                    // TODO
-                    break;
+                    {
+                        // Currently not working
+                        var options = new InternetExplorerOptions
+                        {
+                            IgnoreZoomLevel = true
+                        };
+                        driver = new InternetExplorerDriver(options);
+
+                        break;
+                    }                    
+                case "Chrome":
                 default:
                     throw new NotSupportedException();
             }
