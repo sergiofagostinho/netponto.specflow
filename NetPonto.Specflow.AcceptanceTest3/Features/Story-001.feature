@@ -10,10 +10,10 @@ Esquema do Cenário: Preencher formulário de enviar a amigo envia email
 	Então um email é enviado para o meu amigo
 
 Exemplos: 
-| email                  | nome |
-| paulo.iap@gmail.com    |      |
-| seesharptec@gmail.com  |      |
-| jorgesalitre@gmail.com |      |
+| email                  |
+| paulo.iap@gmail.com    |
+| seesharptec@gmail.com  |
+| jorgesalitre@gmail.com |
 
 Esquema do Cenário: Preencher formulário de enviar a amigo não envia email
 	Dado que estou no formulário "enviar a amigo"

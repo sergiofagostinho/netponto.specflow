@@ -67,10 +67,10 @@ namespace NetPonto.Specflow.AcceptanceTest3.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Preencher formulário de enviar a amigo envia email")]
         [NUnit.Framework.CategoryAttribute("priority1")]
-        [NUnit.Framework.TestCaseAttribute("paulo.iap@gmail.com", "", null)]
-        [NUnit.Framework.TestCaseAttribute("seesharptec@gmail.com", "", null)]
-        [NUnit.Framework.TestCaseAttribute("jorgesalitre@gmail.com", "", null)]
-        public virtual void PreencherFormularioDeEnviarAAmigoEnviaEmail(string email, string nome, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("paulo.iap@gmail.com", null)]
+        [NUnit.Framework.TestCaseAttribute("seesharptec@gmail.com", null)]
+        [NUnit.Framework.TestCaseAttribute("jorgesalitre@gmail.com", null)]
+        public virtual void PreencherFormularioDeEnviarAAmigoEnviaEmail(string email, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "priority1"};
@@ -86,10 +86,8 @@ this.ScenarioSetup(scenarioInfo);
 #line 8
   testRunner.And(string.Format("preenchi os campos com o nome \"Sergio\" e endereço \"{0}\"", email), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line 9
-  testRunner.But("", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Mas ");
-#line 10
  testRunner.When("carrego no botão “enviar”", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line 11
+#line 10
  testRunner.Then("um email é enviado para o meu amigo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             this.ScenarioCleanup();
@@ -108,17 +106,17 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void PreencherFormularioDeEnviarAAmigoNaoEnviaEmail(string nome, string email, string erro, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Preencher formulário de enviar a amigo não envia email", exampleTags);
-#line 19
+#line 18
 this.ScenarioSetup(scenarioInfo);
-#line 20
+#line 19
  testRunner.Given("que estou no formulário \"enviar a amigo\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
-#line 21
+#line 20
   testRunner.And(string.Format("preenchi os campos com o nome \"{0}\" e endereço \"{1}\"", nome, email), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line 22
+#line 21
  testRunner.When("carrego no botão “enviar”", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line 23
+#line 22
  testRunner.Then(string.Format("é mostrada uma mensagem de erro com o texto \"{0}\"", erro), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
-#line 24
+#line 23
   testRunner.And("nenhum email é enviado para o meu amigo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
             this.ScenarioCleanup();
