@@ -35,6 +35,7 @@ namespace NetPonto.Specflow.AcceptanceTest3.Steps
         }
 
         [Then(@"um email é enviado para o meu amigo")]
+        [Then(@"um email é enviado para a minha amiga")]
         public void ThenAnEmailIsSentToMyFriend()
         {
             Thread.Sleep(2000);
