@@ -27,8 +27,8 @@ Exemplos:
 |                  |                            | Os campos são obrigatórios!             |
 | Eu               |                            | Os campos são obrigatórios!             |
 |                  | foo@bar.com                | Os campos são obrigatórios!             |
-| Z                | paulo.iap@gmail.com        | 2 a 24 letras, sem números nem símbolos |
-| Sérgio81         | seesharptec@gmail.com      | 2 a 24 letras, sem números nem símbolos |
-| _darkoolfxper666 | darkjorgesalitre@gmail.com | 2 a 24 letras, sem números nem símbolos |
+| Z                | piap@gmail.com             | 2 a 24 letras, sem números nem símbolos |
+| Sérgio81         | csharptek@gmail.com        | 2 a 24 letras, sem números nem símbolos |
+| _darkoolfxper666 | darksalt@gmail.com         | 2 a 24 letras, sem números nem símbolos |
 | José Povinho     | foo                        | o endereço de email não é válido        |
-| John Doe         | seesharptec_at_gmail.com   | o endereço de email não é válido        |
+| John Doe         | csharptek_at_gmail.com     | o endereço de email não é válido        |
